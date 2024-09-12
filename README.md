@@ -27,5 +27,5 @@
 - checking the determinism of the nullifier calculation (given the same initial data, the same result is always obtained);
 - checking that the degree of a polynomial is determined correctly (monomials of higher degrees with zero coefficients are not taken into account);
 - checking that strong Fiat-Shamir transformation is used to obtain random protocol variables: Public Input and common parameters are fed to the hash function during it’s initialization;
-- checking that the proof for the groth16 protocol is protected from modification [4];
+- checking that the proof for the groth16 protocol is protected from modification [Beosin’s Research | Transaction Malleability Attack of Groth16 Proof: https://www.beosin.com/resources/beosin’s-research--transaction-malleability-attack-of-groth];
 - checking that no sensitive data is leaked during the trusted installation procedure.
