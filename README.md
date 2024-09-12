@@ -3,17 +3,17 @@
 
 ## **For arithmetic circuits it’s necessary to check:**
 
-    - absence of redundant restrictions (which may lead to impossibility of valid proof calculation) in the circuit;
-    - existence of all necessary order constraints (<, >, =); for example, the remainder should be less than the divisor, the sum of the transaction inputs should be greater than the sum of the transaction outputs;
-    - prover’s inability to manipulate sensitive circuit information; in particular -- the variables, defining the scheme, should not be a part of the witnes; 
-    - involvement of all PI inputs and witness elements in the circuit;
-    - сircuit integrity (absence of logic-changing simplifications) after compilation.
+- absence of redundant restrictions (which may lead to impossibility of valid proof calculation) in the circuit;
+- existence of all necessary order constraints (<, >, =); for example, the remainder should be less than the divisor, the sum of the transaction inputs should be greater than the sum of the transaction outputs;
+- prover’s inability to manipulate sensitive circuit information; in particular -- the variables, defining the scheme, should not be a part of the witnes; 
+- involvement of all PI inputs and witness elements in the circuit;
+- сircuit integrity (absence of logic-changing simplifications) after compilation.
 
 ## **For arithmetic circuits and smart contract functions/procedures:**
 
-    - checking input variables for being field element/having specified bit length;
-    - checking the arguments of mathematical functions for belonging to it’s domain (for example, modulo inverse argument should not be equal to 0, even if Fermat’s little theorem is used for calculation; O point should not be considered as lying on an elliptic curve), and the returned values for belonging to it’s range;
-    - checking that during arithmetic operations an intermediate result belongs to field / not exceeds the bit length of the variable.
+- checking input variables for being field element/having specified bit length;
+- checking the arguments of mathematical functions for belonging to it’s domain (for example, modulo inverse argument should not be equal to 0, even if Fermat’s little theorem is used for calculation; O point should not be considered as lying on an elliptic curve), and the returned values for belonging to it’s range;
+- checking that during arithmetic operations an intermediate result belongs to field / not exceeds the bit length of the variable.
 
 ## **For contracts:**
 
